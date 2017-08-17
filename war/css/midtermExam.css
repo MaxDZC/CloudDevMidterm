@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------------------------
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Copyright (C) Rococo Global Technologies, Inc - All Rights Reserved 2016
+ * --------------------------------------------------------------------------- */
+
+/**
+ * Contains the styles for the html page.
+ * @author Lehmar Cabrillos
+ * @version 0.01 
+ * Version History [03/08/2016] 0.01 – Lehmar Cabrillos – initial
+ *          codes
+ **/
+label, td{
+	width: 150px;
+}
+
+input, select{
+	width: 300px;
+}
+
+button {
+	width: 145px;
+	margin: 5px;
+}
+
+
+#gradeStatus {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#gradeStatus input{
+	width: 100px;
+}

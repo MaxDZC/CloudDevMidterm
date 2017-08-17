@@ -1,0 +1,105 @@
+<!--   ------------------------------------------------------------------------------
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Copyright (C) Rococo Global Technologies, Inc - All Rights Reserved 2016
+ * --------------------------------------------------------------------------- -->
+
+<!-- *
+ * Contains the elements for the web page.
+ * @author Lehmar Cabrillos
+ * @version 0.01 
+ * Version History [03/08/2016] 0.01 – Lehmar Cabrillos – initial
+ *          codes
+ ** -->
+ 
+<!DOCTYPE html>
+<html>
+	<title>Midterm Exam</title>
+	<!-- Attaching the css file. -->
+	<link rel="stylesheet" type="text/css" href="../css/midtermExam.css">
+	
+	<body>
+		<!-- Contains the basic information for the report card -->
+		<div id="basicInfo">
+			<b>BASIC INFORMATION</b>
+			<table>
+				<tr>
+					<td> Name </td>
+					<td> <input id="studentName"> </td>
+				</tr>
+				<tr>
+					<td> Grade Level </td>
+					<td> <input id="gradeLevel"> </td>
+				</tr>
+				<tr>
+					<td> Section Name </td>
+					<td> <input id="sectionName"> </td>
+				</tr>
+				<tr>
+					<td> Grading Period </td>
+					<td> <select id="gradingPeriod"> 
+							<option value="1"> 1st Quarter </option>
+							<option value="2"> 2nd Quarter </option>
+							<option value="3"> 3rd Quarter </option>
+							<option value="4"> 4th Quarter </option>
+						</select>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+		
+		<!-- Contains the grades and status for the report card -->
+		<div id="gradeStatus">
+			<b>GRADE INFORMATION</b>
+			<table>
+				<tr>
+					<td> <b>Subject</b> </td>
+					<td> <b>Grade (%)</b> </td>
+				</tr>
+				<tr>
+					<td> Filipino </td>
+					<td> <input id="gradeFil" type="number" minimum="0"> </td>
+				</tr>
+				<tr>
+					<td> Social Studies </td>
+					<td> <input id="gradeSocStud" type="number" minimum="0"> </td>
+				</tr>
+				<tr>
+					<td> MAPEH </td>
+					<td> <input id="gradeMapeh" type="number" minimum="0"> </td>
+				</tr>
+				<tr>
+					<td> English </td>
+					<td> <input id="gradeEnglish" type="number" minimum="0"> </td>
+				</tr>
+				<tr>
+					<td> Science </td>
+					<td> <input id="gradeScience" type="number" minimum="0"> </td>
+				</tr>
+				<tr>
+					<td> Mathematics </td>
+					<td> <input id="gradeMath" type="number" minimum="0"> </td>
+				</tr>
+				<tr>
+					<td> Total Grade </td>
+					<td> <input id="gradeTotal" type="number" disabled> </td>
+				</tr>
+				<tr>
+					<td> Passed </td>
+					<td> <input id="passFail" disabled> </td>
+				</tr>
+			</table>
+		</div>
+		
+		<!-- Contains the buttons -->
+		<div id="buttons">
+			<button id="btnAdd" onclick="createRecord()">CREATE</button>
+			<button id="btnUpdate" onclick="updateRecord()">UPDATE</button>
+			<button id="btnDelete" onclick="deleteRecord()">DELETE</button> 
+		</div>
+		
+		<!-- Attaching the JS file. -->
+		<script src="../js/midtermExam.js"></script>
+	</body>
+</html>	
